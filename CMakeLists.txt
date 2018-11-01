@@ -10,17 +10,15 @@ set(SQLITECPP_RUN_CPPLINT OFF CACHE BOOL "" FORCE)
 add_subdirectory(SQLiteCpp)
 
 # add main.cpp example source code
-set(SOURCE_FILES src/main.cpp)
-add_executable(SQLiteCpp_Example ${SOURCE_FILES})
+set(MAIN_TARGET_NAME SQLiteCpp_Example)
+add_executable(SQLiteCpp_Example src/main.cpp)
 
-# Link SQLiteCpp_example1 with SQLiteCpp and sqlite3 (and also pthread and dl for linux)
 if(UNIX AND NOT APPLE)
-   # Linux
-   target_link_libraries(SQLiteCpp_Example SQLiteCpp sqlite3 pthread dl)
-elseif(UNIX AND APPLE)
-   # Mac OS
-   target_link_libraries(SQLiteCpp_Example SQLiteCpp sqlite3 pthread)
+  # Linux
+  # Removed linking to pthread, more detail:
+  # https://github.com/tstack/lnav/issues/153
+  # https://stackoverflow.com/questions/33697072/why-is-pthread-necessary-for-usage-of-stdthread-in-gcc-and-clang
+  target_link_libraries(${MAIN_TARGET_NAME} SQLiteCpp sqlite3 dl)
 else()
-   # Windows
-   target_link_libraries(SQLiteCpp_Example SQLiteCpp sqlite3)
+  target_link_libraries(${MAIN_TARGET_NAME} SQLiteCpp sqlite3)
 endif()
