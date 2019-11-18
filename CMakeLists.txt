@@ -17,7 +17,7 @@ add_executable(SQLiteCpp_Example ${SOURCE_FILES})
 if(UNIX AND NOT APPLE)
    # Linux
    target_link_libraries(SQLiteCpp_Example SQLiteCpp sqlite3 pthread dl)
-else(UNIX AND APPLE)
+elseif(UNIX AND APPLE)
    # Mac OS
    target_link_libraries(SQLiteCpp_Example SQLiteCpp sqlite3 pthread)
 else()
