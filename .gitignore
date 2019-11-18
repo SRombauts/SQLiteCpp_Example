@@ -28,3 +28,6 @@ SQLiteCpp_tests
 
 !FindSQLiteCpp.cmake
 /SQLiteCpp_Example
+
+.idea/
+cmake-build-debug/
