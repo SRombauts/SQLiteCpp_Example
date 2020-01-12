@@ -14,7 +14,7 @@ with a few intuitive and well documented C++ classes.
 
 ### License:
 
-Copyright (c) 2012-2017 Sébastien Rombauts (sebastien.rombauts@gmail.com)
+Copyright (c) 2012-2020 Sébastien Rombauts (sebastien.rombauts@gmail.com)
 <a href="https://www.paypal.me/SRombauts" title="Pay Me a Beer! Donate with PayPal :)"><img src="https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png" width="118"></a>
 
 Distributed under the MIT License (MIT) (See accompanying file LICENSE.txt
@@ -34,7 +34,7 @@ git submodule update
 
 ### CMake and build:
 
-Use build.bat or ./build.sh script, or cmake commande line (example for Linux): 
+Use build.bat or ./build.sh script, or cmake command line (example for Linux): 
 
 ```Shell
 mkdir -p build
