@@ -1,6 +1,10 @@
 SQLiteC++
 ---------
 
+[![release](https://img.shields.io/github/release/SRombauts/SQLiteCpp.svg)](https://github.com/SRombauts/SQLiteCpp/releases)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SRombauts/SQLiteCpp/blob/master/LICENSE.txt)
+[![GitHub Actions Build status](https://github.com/SRombauts/SQLiteCpp_Example/workflows/build/badge.svg)](https://github.com/SRombauts/SQLiteCpp_Example/actions "GitHhub Actions Build status")
+
 [SQLiteC++ (SQLiteCpp)](https://github.com/SRombauts/SQLiteCpp) is a smart and easy to use C++ SQLite3 wrapper.
 
 [See SQLiteC++ website on GitHub](http://srombauts.github.com/SQLiteCpp).
