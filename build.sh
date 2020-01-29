@@ -1,10 +1,10 @@
 #!/bin/sh
-# Copyright (c) 2012-2017 Sébastien Rombauts (sebastien.rombauts@gmail.com)
+# Copyright (c) 2012-2020 Sébastien Rombauts (sebastien.rombauts@gmail.com)
 #
 # Distributed under the MIT License (MIT) (See accompanying file LICENSE.txt
 # or copy at http://opensource.org/licenses/MIT)
 
-# exit on firts error
+# exit on first error
 set -e
 
 mkdir -p build
